@@ -83,7 +83,7 @@ function Hero() {
                 variants={list}
                 className="font-semibold text-[clamp(1.3rem,2.2vw,2rem)] max-w-[37rem] text-[#fff]  "
               >
-                Join FarmPal's digital investment{" "}
+                Join FarmPal&apos;s digital investment{" "}
               </motion.p>
               <motion.p
                 variants={list}
@@ -96,7 +96,7 @@ function Hero() {
                 className="font-semibold text-[clamp(1.3rem,2.2vw,2rem)] max-w-[37rem] text-white"
               >
                 {" "}
-                tackle Africa's food crisis.{" "}
+                tackle Africa&apos;s food crisis.{" "}
               </motion.p>
             </motion.div>
 
@@ -128,14 +128,14 @@ function Hero() {
             />
           </figure>
           <p className=" text-white font-medium text-[clamp(1rem,1.3vw,1.2rem)] max-w-[350px]">
-            Statistics: 60% of Africa's population faces food insecurity; 70% of
-            smallholder farmers live below the poverty line
+            Statistics: 60% of Africa&apos;s population faces food insecurity;
+            70% of smallholder farmers live below the poverty line
           </p>
         </div>
 
         <section className=" flex flex-col gap-[clamp(0.5rem,1vw,1rem)] max-[900px]:items-center ">
           <h4 className=" text-secondary-200 font-bold text-[clamp(2rem,4vw,3.7rem)] max-[900px]:text-center max-w-[38rem] dark:text-white  ">
-            Africa's Food Crisis: A Growing Concern
+            Africa&apos;s Food Crisis: A Growing Concern
           </h4>
           <p className=" text-secondary-300 font-semibold text-[clamp(1.1rem,2.2vw,2rem)] max-w-[39rem] dark:text-white ">
             Millions of Africans face hunger and malnutrition due to climate

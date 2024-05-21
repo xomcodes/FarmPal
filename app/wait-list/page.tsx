@@ -71,7 +71,7 @@ export default function WaitList() {
               placeholder="Enter Address"
             />
 
-            <div className="flex self-center ">
+            <div className="flex self-center pb-3">
               <Button
                 classNames={classes}
                 styles={{
