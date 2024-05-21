@@ -1,0 +1,7 @@
+.root {
+  @apply bg-primary h-[50px] rounded-lg hover:bg-primary-500 w-fit;
+  /* px-[77px] */
+}
+.inner {
+  @apply text-[clamp(0.8rem,1.5vw,1.3rem)] font-bold text-white;
+}

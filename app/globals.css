@@ -3,31 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-100: #1fcc4e;
+  --primary-200: #b8f678;
+  --primary-300: #cbfa78;
+  --primary-400: #f9ffee;
+  --primary-500: #2e8b57;
+  --secondary-100: #191919;
+  --secondary-200: #1f2937;
+  --secondary-300: #4b5563;
+  --tetiary-100: #ee9633;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.statistics-gradient {
+  background-image: linear-gradient(to left, #533106, #d07806);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.movement-gradient {
+  background-image: linear-gradient(to left, #bd6c05, #ffd093, #c26f05);
+}
+
+.app-scroll::-webkit-scrollbar {
+  display: hidden;
 }
