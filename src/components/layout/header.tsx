@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import ThemeControl from "@/shared/theme-control";
 import { usePathname } from "next/navigation";
+import LogoImg from "@/src/assets/logo-img.svg";
 
 const navbar = [
   {
@@ -26,13 +27,14 @@ const navbar = [
 
 function Header() {
   return (
-    <header className=" bg-primary-400 dark:bg-secondary-100 py-[clamp(0.6rem,1.4vw,1rem)] px-[clamp(1.8rem,4.1vw,3.7rem)] sticky top-0  z-50  ">
+    <header className=" bg-primary-400 dark:bg-secondary-100 py-2 px-[clamp(1.8rem,4.1vw,3.7rem)] sticky top-0  z-50  ">
+      {/* py-[clamp(0.6rem,1.4vw,1rem)] */}
       <nav className=" justify-between flex  mx-auto   items-center ">
         <div className=" flex items-center justify-center">
           <figure className=" w-[clamp(3rem,5.8vw,5.2rem)] h-[clamp(2.5rem,5.8vw,5.2rem)]">
             <Image
               className="w-full"
-              src="/logo-img.svg"
+              src={LogoImg}
               width={20}
               height={20}
               alt="logo-img"

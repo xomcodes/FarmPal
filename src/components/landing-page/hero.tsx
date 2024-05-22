@@ -6,6 +6,9 @@ import classes from "@/app/button.module.css";
 import Image from "next/image";
 import HeroAnimation from "./hero-animation";
 import { motion } from "framer-motion";
+import LandingBackground from "@/src/assets/landing-background.svg";
+import Statistics from "@/src/assets/statistics.svg";
+import Link from "next/link";
 
 function Hero() {
   const wrapper = {
@@ -45,7 +48,7 @@ function Hero() {
       <section
         className=" bg-no-repeat min-h-[calc(100dvh-123.19px)] flex  w-full object-fit bg-cover items-center "
         style={{
-          backgroundImage: "url(/landing-background.svg)",
+          backgroundImage: `url(${LandingBackground.src})`,
         }}
       >
         <section className=" flex gap-[10px] flex-col px-[clamp(1.8rem,4.1vw,3.7rem)] py-[clamp(2.8rem,6.2vw,5.6rem)]">
@@ -112,20 +115,16 @@ function Hero() {
             transition={{ duration: 0.3, delay: 1.5 }}
             className="mt-10 flex flex-col items-center sm:flex-row gap-3"
           >
-            <Button classNames={classes}>Invest Now</Button>
+            <Link href="/wait-list">
+              <Button classNames={classes}>Invest Now</Button>
+            </Link>
           </motion.div>
         </section>
       </section>
       <section className=" bg-white dark:bg-black px-[clamp(1.8rem,4.2vw,3.7rem)] py-[clamp(1.8rem,4.2vw,3.7rem)] flex gap-[clamp(2rem,8vw,7rem)] items-center max-[900px]:flex-col-reverse  ">
         <div className="px-[clamp(0.9rem,2vw,1.8rem)] py-[clamp(1.5rem,3.3vw,3rem)] flex flex-col items-center gap-[34px] statistics-gradient rounded-[30px]">
           <figure className=" w-[clamp(12.5rem,27vw,25rem)] h-[clamp(12.5rem,27vw,25rem)] border-b border-b-[#fff]">
-            <Image
-              className=" w-full"
-              src="/statistics.svg"
-              width={20}
-              height={20}
-              alt="statistics"
-            />
+            <Image className=" w-full" src={Statistics} alt="statistics" />
           </figure>
           <p className=" text-white font-medium text-[clamp(1rem,1.3vw,1.2rem)] max-w-[350px]">
             Statistics: 60% of Africa&apos;s population faces food insecurity;

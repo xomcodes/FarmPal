@@ -14,6 +14,7 @@ import { ThemeProvider } from "next-themes";
 
 import Header from "@/layout/header";
 import Footer from "@/layout/footer";
+import ModalProvider from "@/providers/modal-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,13 +55,15 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" enableSystem enableColorScheme>
           <MantineProvider theme={theme}>
-            <main className="flex flex-col h-screen">
-              <Header />
+            <ModalProvider>
+              <main className="flex flex-col min-h-[100vh]">
+                <Header />
 
-              {children}
+                {children}
 
-              <Footer />
-            </main>
+                <Footer />
+              </main>
+            </ModalProvider>
           </MantineProvider>
         </ThemeProvider>
       </body>

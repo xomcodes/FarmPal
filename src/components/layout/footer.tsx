@@ -3,6 +3,8 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React from "react";
 import { BsInstagram } from "react-icons/bs";
+import LogoImg from "@/src/assets/logo-img.svg";
+2;
 import {
   FaYoutube,
   FaFacebookF,
@@ -16,17 +18,20 @@ function Footer() {
     <>
       {pathname.includes("/wait-list") ? null : (
         <footer className=" py-[clamp(1.4rem,3.2vw,3vw)] px-[clamp(2.5rem,5.5vw,5rem)] bg-primary  dark:bg-secondary-100 flex flex-col gap-[clamp(1.5rem,3.3vw,3rem)] ">
-          <figure className=" w-[267px] h-[65px]">
-            <Image
-              src="/dark-bg-logo.png"
-              width={0}
-              height={0}
-              alt="/dark-bg-logo.png"
-            />
-          </figure>
-          <h3 className=" text-[clamp(0.9rem,1.3vw, 20px)] font-bold text-white border-b border-b-[#D1D5DB] pb-[clamp(1.5rem,3.3vw,3rem)]">
-            Kigali, Buture, Rwanda,
-          </h3>
+          <div>
+            <figure className=" w-[clamp(4rem,10vw,9rem)] h-[clamp(4rem,10vw,9rem)]">
+              <Image
+                className="w-full"
+                src={LogoImg}
+                width={20}
+                height={20}
+                alt="logo-img"
+              />
+            </figure>
+            <h3 className=" text-[clamp(0.9rem,1.3vw, 20px)] font-bold text-white border-b border-b-[#D1D5DB] pb-[clamp(1.5rem,3.3vw,3rem)]">
+              Kigali, Buture, Rwanda,
+            </h3>
+          </div>
           <div className=" grid justify-between grid-cols-4 border-b border-b-[#D1D5DB] pb-[clamp(1.5rem,3.3vw,3rem)] max-[530px]:grid-cols-2">
             <div className=" flex flex-col gap-[clamp(1.3rem,1.94vw,1.7rem)]">
               <h2 className=" text-[clamp(0.9rem,1.3vw,1.25rem)] font-semibold text-white">

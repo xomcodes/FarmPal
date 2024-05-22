@@ -6,6 +6,8 @@ import classes from "@/app/button.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import HeroAnimation from "./hero-animation";
+import Phone from "@/src/assets/phone.svg";
+import Img from "@/src/assets/img.svg";
 
 function Partners() {
   const wrapper = {
@@ -95,7 +97,7 @@ function Partners() {
         </div>
         <figure className=" max-[720px]:w-full  ">
           <Image
-            src="/phone.svg"
+            src={Phone}
             width={20}
             height={20}
             alt="phone"
@@ -111,79 +113,37 @@ function Partners() {
         <section className=" grid grid-cols-4 gap-[clamp(2rem,6.9vw,6.2rem)] max-[362px]:grid-cols-3  ">
           <div className=" px-[clamp(0.7rem,1.7vw,1.6rem)] py-[clamp(0.7rem,1.3vw,1.2rem)] bg-[#353945] flex items-center justify-center">
             <figure className=" w-[clamp(2.4rem,4vw,3.6rem)] h-[clamp(1.7rem,3.2vw,2.8rem)] ">
-              <Image
-                src="/img.svg"
-                width={20}
-                height={20}
-                alt="image"
-                className="w-full"
-              />
+              <Image src={Img} alt="image" className="w-full" />
             </figure>
           </div>
           <div className=" px-[clamp(0.7rem,1.7vw,1.6rem)] py-[clamp(0.7rem,1.3vw,1.2rem)] bg-[#353945] flex items-center justify-center">
             <figure className=" w-[clamp(2.4rem,4vw,3.6rem)] h-[clamp(1.7rem,3.2vw,2.8rem)] ">
-              <Image
-                src="/img.svg"
-                width={20}
-                height={20}
-                alt="image"
-                className="w-full"
-              />
+              <Image src={Img} alt="image" className="w-full" />
             </figure>
           </div>
           <div className=" px-[clamp(0.7rem,1.7vw,1.6rem)] py-[clamp(0.7rem,1.3vw,1.2rem)] bg-[#353945] flex items-center justify-center">
             <figure className=" w-[clamp(2.4rem,4vw,3.6rem)] h-[clamp(1.7rem,3.2vw,2.8rem)] ">
-              <Image
-                src="/img.svg"
-                width={20}
-                height={20}
-                alt="image"
-                className="w-full"
-              />
+              <Image src={Img} alt="image" className="w-full" />
             </figure>
           </div>
           <div className=" px-[clamp(0.7rem,1.7vw,1.6rem)] py-[clamp(0.7rem,1.3vw,1.2rem)] bg-[#353945] flex items-center justify-center">
             <figure className=" w-[clamp(2.4rem,4vw,3.6rem)] h-[clamp(1.7rem,3.2vw,2.8rem)] ">
-              <Image
-                src="/img.svg"
-                width={20}
-                height={20}
-                alt="image"
-                className="w-full"
-              />
+              <Image src={Img} alt="image" className="w-full" />
             </figure>
           </div>
           <div className=" px-[clamp(0.7rem,1.7vw,1.6rem)] py-[clamp(0.7rem,1.3vw,1.2rem)] bg-[#353945] flex items-center justify-center">
             <figure className=" w-[clamp(2.4rem,4vw,3.6rem)] h-[clamp(1.7rem,3.2vw,2.8rem)] ">
-              <Image
-                src="/img.svg"
-                width={20}
-                height={20}
-                alt="image"
-                className="w-full"
-              />
+              <Image src={Img} alt="image" className="w-full" />
             </figure>
           </div>
           <div className=" px-[clamp(0.7rem,1.7vw,1.6rem)] py-[clamp(0.7rem,1.3vw,1.2rem)] bg-[#353945] flex items-center justify-center">
             <figure className=" w-[clamp(2.4rem,4vw,3.6rem)] h-[clamp(1.7rem,3.2vw,2.8rem)] ">
-              <Image
-                src="/img.svg"
-                width={20}
-                height={20}
-                alt="image"
-                className="w-full"
-              />
+              <Image src={Img} alt="image" className="w-full" />
             </figure>
           </div>
           <div className=" px-[clamp(0.7rem,1.7vw,1.6rem)] py-[clamp(0.7rem,1.3vw,1.2rem)] bg-[#353945] flex items-center justify-center">
             <figure className=" w-[clamp(2.4rem,4vw,3.6rem)] h-[clamp(1.7rem,3.2vw,2.8rem)] ">
-              <Image
-                src="/img.svg"
-                width={20}
-                height={20}
-                alt="image"
-                className="w-full"
-              />
+              <Image src={Img} alt="image" className="w-full" />
             </figure>
           </div>
         </section>

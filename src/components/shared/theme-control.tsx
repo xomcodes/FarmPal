@@ -11,6 +11,7 @@ export default function ThemeControl() {
   const [mounted, setMounted] = useState(false);
   const [checked, setChecked] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
+  const [control, setControl] = useState(false);
 
   // useEffect(() => {
   //   setMounted(false);
@@ -39,5 +40,8 @@ export default function ThemeControl() {
       offLabel={<Moon size={20} onClick={() => setTheme("dark")} />}
       color="#1fcc4e"
     />
+    // control ?
+    // <Moon /> :
+    // <Sun />
   );
 }

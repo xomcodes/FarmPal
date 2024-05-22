@@ -5,6 +5,7 @@ import classes from "@/app/button.module.css";
 import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import Img from "@/src/assets/img.svg";
 
 const styles = {
   root: {
@@ -36,7 +37,7 @@ function Testimonial() {
             <div className=" py-[clamp(1.8rem,2vw,2rem)] px-[clamp(1.4rem,1.8vw,1.7rem)] bg-black rounded-full  flex ">
               <figure className=" w-[clamp(2.4rem,4vw,3.6rem)] h-[clamp(1.7rem,3.2vw,2.8rem)]">
                 <Image
-                  src="/img.svg"
+                  src={Img}
                   width={20}
                   height={20}
                   alt="image"
@@ -62,13 +63,7 @@ function Testimonial() {
           <section className=" flex flex-col gap-[37px] items-center min-w-[175px] max-[593px]:w-full ">
             <div className=" py-[clamp(1.8rem,2vw,2rem)] px-[clamp(1.4rem,1.8vw,1.7rem)] bg-black rounded-full items-center flex justify-center">
               <figure className=" w-[clamp(2.4rem,4vw,3.6rem)]  h-[clamp(1.7rem,3.2vw,2.8rem)]">
-                <Image
-                  src="/img.svg"
-                  width={20}
-                  height={20}
-                  alt="image"
-                  className="w-full"
-                />
+                <Image src={Img} alt="image" className="w-full" />
               </figure>
             </div>
             <figure className="h-[24px] w-[36px]">
@@ -89,13 +84,7 @@ function Testimonial() {
           <section className=" flex flex-col gap-[37px] items-center min-w-[175px]  max-[593px]:w-full ">
             <div className=" py-[clamp(1.8rem,2vw,2rem)] px-[clamp(1.4rem,1.8vw,1.7rem)] bg-black rounded-full items-center flex justify-center">
               <figure className=" w-[clamp(2.4rem,4vw,3.6rem)]  h-[clamp(1.7rem,3.2vw,2.8rem)]">
-                <Image
-                  src="/img.svg"
-                  width={20}
-                  height={20}
-                  alt="image"
-                  className="w-full"
-                />
+                <Image src={Img} alt="image" className="w-full" />
               </figure>
             </div>
             <figure className="h-[24px] w-[36px]">

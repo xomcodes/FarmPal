@@ -3,6 +3,11 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import Digital from "@/src/assets/digital.svg";
+import CrowdFunding from "@/src/assets/crowdfunding.svg";
+import Empowerment from "@/src/assets/empowerment.svg";
+import Impact from "@/src/assets/impact.svg";
+import InvestBg from "@/src/assets/invest-bg.svg";
 
 const box = {
   hidden: {
@@ -19,19 +24,19 @@ const box = {
 const featureList = [
   {
     name: "Digital investment Platform",
-    img: "/digital.svg",
+    img: Digital,
   },
   {
     name: "Crowdfunding Model",
-    img: "/crowdfunding.svg",
+    img: CrowdFunding,
   },
   {
     name: "Farmer Empowerment",
-    img: "/empowerment.svg",
+    img: Empowerment,
   },
   {
     name: "Impact Measurement",
-    img: "/impact.svg",
+    img: Impact,
   },
 ];
 function Features() {
@@ -40,7 +45,7 @@ function Features() {
       <section
         className=" bg-no-repeat min-h-[60dvh]  flex relative  w-full object-fit bg-cover items-center bg-black  opacity-[#000]"
         style={{
-          backgroundImage: "url(/invest-bg.svg)",
+          backgroundImage: `url(${InvestBg.src})`,
         }}
       >
         <div className=" bg-[#0000007A] absolute inset-0"></div>
