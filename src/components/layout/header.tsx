@@ -2,9 +2,10 @@ import { HambergerMenu } from "iconsax-react";
 import React from "react";
 
 import Image from "next/image";
-import ThemeControl from "@/shared/theme-control";
+// import ThemeControl from "@/shared/theme-control";
 import { usePathname } from "next/navigation";
 import LogoImg from "@/src/assets/logo-img.svg";
+import { ThemeControl } from "@/shared/theme-control";
 
 const navbar = [
   {
