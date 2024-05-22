@@ -42,7 +42,7 @@ export default function WaitList() {
             investing. we are thrilled to have you here.
           </p>
         </div>
-        <div className=" flex w-[100%] items-center max-[732px]:flex-col ">
+        <div className=" flex w-[100%] items-center max-[732px]:flex-col max-[732px]:px-3 ">
           <figure className=" w-[322px] h-[333px] hidden  max-[732px]:flex">
             <Image
               width={20}
@@ -62,7 +62,7 @@ export default function WaitList() {
             />
           </figure>
 
-          <section className="  px-[53px] py-[27px] max-[732px]:py-[0] max-[732px]:pb-4  flex flex-col gap-[23px] flex-1 w-full bg-white dark:bg-[#FFFFFF26] rounded-tr-[30px] rounded-br-[30px] shadow-lg ">
+          <section className="  px-[53px] py-[29px] max-[732px]:py-[0] max-[732px]:pb-4  flex flex-col gap-[23px] flex-1 w-full bg-white dark:bg-[#FFFFFF26] rounded-tr-[30px] rounded-br-[30px] shadow-lg ">
             <TextInput
               label="Full Name"
               placeholder="Enter Name"

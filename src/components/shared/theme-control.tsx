@@ -17,7 +17,7 @@ export const ThemeControl = () => {
   if (!mounted) return null;
 
   return (
-    <main>
+    <main className=" cursor-pointer">
       {!control ? (
         <Sun1
           onClick={() => {
