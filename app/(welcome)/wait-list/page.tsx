@@ -6,6 +6,7 @@ import React, { useContext } from "react";
 import { useTheme } from "next-themes";
 import { ModalContext } from "@/providers/modal-provider";
 import WaitListModal from "@/modals/wait-list-modal";
+import { useForm } from "@formspree/react";
 
 const styles = {
   root: {
@@ -27,8 +28,9 @@ const styles = {
 export default function WaitList() {
   const { setModalState } = useContext(ModalContext);
   const { resolvedTheme, setTheme } = useTheme();
+
   return (
-    <div className=" bg-white dark:bg-black  h-full items-center flex justify-center flex-1">
+    <div className=" bg-white dark:bg-black   items-center flex justify-center flex-1 h-full">
       <section className=" mx-auto flex items-center justify-center flex-col gap-[clamp(2rem,5.8vw,5.2rem)] h-full ">
         <div className=" flex flex-col gap-[22px] items-center">
           <h4 className="text-[clamp(1.8rem,4vw,3.7rem)] max-w-[868px] text-center  font-bold text-[#1F2937] dark:text-white px-2 ">
@@ -62,11 +64,17 @@ export default function WaitList() {
             />
           </figure>
 
-          <section className="  px-[53px] py-[29px] max-[732px]:py-[0] max-[732px]:pb-4  flex flex-col gap-[23px] flex-1 w-full bg-white dark:bg-[#FFFFFF26] rounded-tr-[30px] rounded-br-[30px] shadow-lg ">
+          <form
+            id="list-form"
+            action="https://formspree.io/f/mrgnvazw"
+            method="POST"
+            // onSubmit={handleSubmit}
+            className="  px-[53px] py-[29px] max-[732px]:py-[0] max-[732px]:pb-4  flex flex-col gap-[23px] flex-1 w-full bg-white dark:bg-[#FFFFFF26] rounded-tr-[30px] rounded-br-[30px] shadow-lg "
+          >
             <TextInput
+              required
               label="Full Name"
               placeholder="Enter Name"
-              //   styles={styles}
               styles={{
                 root: {
                   width: "100%",
@@ -85,9 +93,14 @@ export default function WaitList() {
                 },
               }}
             />
+
             <TextInput
+              required
+              id="email"
+              type="email"
+              name="email"
               label="Email Address"
-              placeholder="Enter Address"
+              placeholder="example@mail.com"
               styles={{
                 root: {
                   width: "100%",
@@ -109,12 +122,14 @@ export default function WaitList() {
 
             <div className="flex self-center pb-3">
               <Button
-                onClick={() =>
-                  setModalState({
-                    component: <WaitListModal />,
-                    opened: true,
-                  })
-                }
+                type="submit"
+                // disabled={state.submitting}
+                // onClick={() =>
+                //   setModalState({
+                //     component: <WaitListModal />,
+                //     opened: true,
+                //   })
+                // }
                 classNames={classes}
                 styles={{
                   root: {
@@ -125,7 +140,7 @@ export default function WaitList() {
                 Join Waitlist
               </Button>
             </div>
-          </section>
+          </form>
         </div>
       </section>
     </div>

@@ -22,6 +22,7 @@ const config: Config = {
           100: "var(--secondary-100)",
           200: "var(--secondary-200)",
           300: "var(--secondary-300)",
+          400: "var(--secondary-400)",
         },
       },
     },

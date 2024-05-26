@@ -1,0 +1,11 @@
+
+
+{
+  "forms": {
+    "contactDetils": {
+      "name": "Contact Details",
+      "actions": [{ "type": "email", "to": "xommyb@gmail.com" }],
+       "fields": {"email": {"required": "true", "type": "email"}}
+    }
+  }
+}
