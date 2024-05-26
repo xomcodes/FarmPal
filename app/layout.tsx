@@ -63,10 +63,12 @@ export default function RootLayout({
         <ThemeProvider attribute="class" enableSystem enableColorScheme>
           <MantineProvider theme={theme}>
             <ModalProvider>
-              <Header />
+              <main className="flex flex-col min-h-[100vh]">
+                <Header />
 
-              {children}
-              <Footer />
+                {children}
+                <Footer />
+              </main>
             </ModalProvider>
           </MantineProvider>
         </ThemeProvider>

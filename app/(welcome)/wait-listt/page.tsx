@@ -25,7 +25,7 @@ const styles = {
     fontSize: "16px",
   },
 };
-export default function WaitList() {
+export default function WaitListt() {
   const { setModalState } = useContext(ModalContext);
   const { resolvedTheme, setTheme } = useTheme();
 
