@@ -1,7 +1,6 @@
 import React from "react";
 
 import { ThemeControl } from "@/shared/theme-control";
-import SignInForm from "@/auth/signin-form";
 import SignUpForm from "@/auth/signup-form";
 
 function SignUp() {
