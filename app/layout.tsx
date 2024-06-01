@@ -1,16 +1,15 @@
 "use client";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import "@mantine/core/styles.css";
+
 import "@mantine/carousel/styles.css";
 import "@mantine/dates/styles.css";
 import {
-  Button,
   ColorSchemeScript,
   MantineColorsTuple,
   MantineProvider,
-  PasswordInput,
   createTheme,
 } from "@mantine/core";
 
@@ -43,6 +42,30 @@ const myColor: MantineColorsTuple = [
   "#009834",
 ];
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900",
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900",
+  ],
+});
+
 const theme = createTheme({
   colors: {
     myColor,
@@ -59,17 +82,17 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript />
       </head>
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <ThemeProvider attribute="class" enableSystem enableColorScheme>
           <MantineProvider theme={theme}>
             <ModalProvider>
-              <main className="flex flex-col min-h-[100vh]">
+              {/* <main className="flex flex-col min-h-[100vh]">
                 <Header />
 
                 {children}
                 <Footer />
-              </main>
-              {/* {children} */}
+              </main> */}
+              {children}
             </ModalProvider>
           </MantineProvider>
         </ThemeProvider>

@@ -8,11 +8,12 @@
   --primary-300: #cbfa78;
   --primary-400: #f9ffee;
   --primary-500: #2e8b57;
+  --primary-600: #efffd2;
   --secondary-100: #191919;
   --secondary-200: #1f2937;
   --secondary-300: #4b5563;
   --secondary-400: #42505c;
-
+  --secondary-500: #0d0d0d;
   --tetiary-100: #ee9633;
 }
 
@@ -44,6 +45,14 @@
 }
 .PhoneInputInput {
   font-size: 14px;
+}
+
+.reverse {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+  direction: rtl;
+  gap: 26px;
 }
 
 /* .PhoneInputCountrySelect {

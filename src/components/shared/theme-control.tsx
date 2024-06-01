@@ -35,7 +35,7 @@ export const ThemeControl = () => {
             setControl(false);
           }}
           size="22"
-          color="#1fcc4e"
+          color="#2E8B57"
           variant="Bold"
         />
       )}

@@ -9,10 +9,10 @@ import Testimonial from "@/landing-page/testimonial";
 export default function Home() {
   return (
     <main className=" flex-col flex">
-      <Hero />
+      {/* <Hero />
       <Features />
       <Partners />
-      <Testimonial />
+      <Testimonial /> */}
     </main>
   );
 }

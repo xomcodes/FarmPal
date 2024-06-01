@@ -3,5 +3,5 @@
   /* px-[77px] */
 }
 .inner {
-  @apply text-[clamp(0.8rem,1.5vw,1.3rem)] font-bold text-white;
+  @apply text-[clamp(0.8rem,1.3vw,1.2rem)] font-bold text-white;
 }

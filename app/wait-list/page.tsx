@@ -5,8 +5,6 @@ import Image from "next/image";
 import React, { useContext } from "react";
 import { useTheme } from "next-themes";
 import { ModalContext } from "@/providers/modal-provider";
-import WaitListModal from "@/modals/wait-list-modal";
-import { useForm } from "@formspree/react";
 
 const styles = {
   root: {
