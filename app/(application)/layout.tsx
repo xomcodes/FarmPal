@@ -5,6 +5,7 @@ import { Avatar } from "@mantine/core";
 import { Notification } from "iconsax-react";
 import { ThemeControl } from "@/shared/theme-control";
 import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
 
 function ApplicationLayout({ children }: { children: ReactNode }) {
   return (
