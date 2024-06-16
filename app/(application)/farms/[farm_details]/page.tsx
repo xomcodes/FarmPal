@@ -60,8 +60,8 @@ function FarmDetails({ params }: { params: { farm_details: string } }) {
               </Carousel>
 
               <div className="flex gap-[23px]">
-                {images.map((item) => (
-                  <figure className=" w-[200px] h-[100px]">
+                {images.map((item, idx) => (
+                  <figure key={idx} className=" w-[200px] h-[100px]">
                     <Image
                       src={item}
                       width={20}

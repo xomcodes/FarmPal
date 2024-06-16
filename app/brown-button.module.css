@@ -1,5 +1,5 @@
 .root {
-  @apply bg-tetiary-100 h-[56px] rounded-lg hover:bg-[#d6872d] w-[290px];
+  @apply bg-tetiary-100 h-[56px] rounded-lg hover:bg-[#d6872d] w-[clamp(9rem,20vw,18rem)];
   /* px-[77px] */
 }
 .inner {

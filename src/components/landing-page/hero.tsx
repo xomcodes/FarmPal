@@ -121,7 +121,7 @@ function Hero() {
           </motion.div>
         </section>
       </section>
-      <section className=" bg-white dark:bg-black px-[clamp(1.8rem,4.2vw,3.7rem)] py-[clamp(1.8rem,4.2vw,3.7rem)] flex gap-[clamp(2rem,8vw,7rem)] items-center max-[900px]:flex-col-reverse  ">
+      <section className=" bg-white dark:bg-primary-700 px-[clamp(1.8rem,4.2vw,3.7rem)] py-[clamp(1.8rem,4.2vw,3.7rem)] flex gap-[clamp(2rem,8vw,7rem)] items-center max-[900px]:flex-col-reverse  ">
         <div className="px-[clamp(0.9rem,2vw,1.8rem)] py-[clamp(1.5rem,3.3vw,3rem)] flex flex-col items-center gap-[34px] statistics-gradient rounded-[30px]">
           <figure className=" w-[clamp(12.5rem,27vw,25rem)] h-[clamp(12.5rem,27vw,25rem)] border-b border-b-[#fff]">
             <Image className=" w-full" src={Statistics} alt="statistics" />

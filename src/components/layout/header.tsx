@@ -34,7 +34,7 @@ const navbar = [
 function Header() {
   const [opened, { open, close }] = useDisclosure(false);
   return (
-    <header className=" bg-primary-400 dark:bg-secondary-100 py-2 px-[clamp(1.8rem,4.1vw,3.7rem)] sticky top-0  z-50  ">
+    <header className=" bg-primary-400 dark:bg-primary-700 py-2 px-[clamp(1.8rem,4.1vw,3.7rem)] sticky top-0  z-50  ">
       {/* py-[clamp(0.6rem,1.4vw,1rem)] */}
       <nav className=" justify-between flex  mx-auto   items-center ">
         <div className=" flex items-center justify-center">

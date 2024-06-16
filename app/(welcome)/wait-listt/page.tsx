@@ -1,6 +1,6 @@
 "use client";
 import { Button, TextInput } from "@mantine/core";
-import classes from "@/app/button.module.css";
+import classes from "@/app/brown-button.module.css";
 import Image from "next/image";
 import React, { useContext } from "react";
 import { useTheme } from "next-themes";
