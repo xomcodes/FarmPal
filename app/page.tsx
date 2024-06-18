@@ -1,6 +1,6 @@
-import Features from "@/landing-page/features";
+import Features from "@/landing-page/services";
 import Hero from "@/landing-page/hero";
-import Partners from "@/landing-page/partners";
+import Partners from "@/landing-page/security-movement";
 import { Button, TextInput } from "@mantine/core";
 import Image from "next/image";
 import classes from "@/app/button.module.css";
