@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Digital from "@/src/assets/digital.svg";
 import CrowdFunding from "@/src/assets/crowdfunding.svg";
 import Empowerment from "@/src/assets/empowerment.svg";
+
 import Impact from "@/src/assets/impact.svg";
 import AboutUsBg from "@/src/assets/about-us-bg.svg";
 import { Button } from "@mantine/core";

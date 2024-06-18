@@ -8,6 +8,8 @@ import Testimonial from "@/landing-page/testimonial";
 import React from "react";
 import Services from "@/landing-page/services";
 import Team from "@/landing-page/team";
+import Partner from "@/landing-page/partner";
+import Faq from "@/landing-page/faq";
 
 function LandingPage() {
   return (
@@ -20,7 +22,9 @@ function LandingPage() {
       <SecurityMovement />
       <Services />
       <Team />
-      <Testimonial />
+      <Partner />
+      <Faq />
+      {/* <Testimonial /> */}
     </main>
   );
 }
