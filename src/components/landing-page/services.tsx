@@ -55,13 +55,13 @@ function Services() {
     <div className=" px-[30px]  bg-[#EFFFD2]  dark:bg-primary-700">
       <section className=" pt-[clamp(1.8rem,4.9vw,4.4rem)] pb-[clamp(50px,6.9vw,100px)]    flex flex-col gap-[clamp(1.8rem,4vw,3.9rem)] items-center ">
         <HeadingText text="Services" />
-        <div className="grid grid-cols-4 gap-[clamp(0.9rem,1vw,24px)] max-[754px]:grid-cols-2 max-[405px]:grid-cols-1   ">
+        <div className="grid grid-cols-4 gap-[clamp(0.9rem,1vw,24px)] max-[754px]:grid-cols-2 max-[553px]:grid-cols-1   ">
           {featureList?.map((item, idx) => (
             <div
               key={idx}
-              className="  py-[clamp(0.5rem,1vw,1rem)] px-2 rounded-[30px] flex item-cented flex-col gap-[19px] bg-white dark:bg-[#FFFFFF33] items-center  min-w-[174px]"
+              className="  py-[clamp(0.5rem,1vw,1rem)] px-2 rounded-[30px] flex  flex-col gap-[19px] bg-white dark:bg-[#FFFFFF33] items-center  min-w-[238px]"
             >
-              <figure className="  ">
+              <figure className=" w-[clamp(9.2rem,20.4vw,18.4rem)] ">
                 <Image
                   // width={0}
                   // height={0}
@@ -70,7 +70,7 @@ function Services() {
                   className=" w-full rounded-[30px]"
                 />
               </figure>
-              <div className=" flex flex-col gap-[20px] items-center">
+              <div className=" flex flex-col gap-[20px] items-center ">
                 <h4 className=" max-w-[260px] text-[clamp(1rem,1.6vw,1.5rem)] font-bold text-secondary-200 text-center dark:text-[#F3F4F6]">
                   {item?.name}
                 </h4>
