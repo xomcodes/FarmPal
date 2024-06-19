@@ -203,7 +203,7 @@ function Testimonial() {
         </Carousel>
          */}
       </div>
-
+      {/* 
       <section className=" py-[clamp(2rem,5vw,4rem)] px-3 flex items-center justify-center bg-[#ee9633]">
         <div className=" p-[clamp(0.8rem,4.4vw,4rem)] bg-white flex items-center  rounded-lg gap-5 max-[600px]:flex-col   max-[600px]:w-full">
           <>
@@ -252,7 +252,7 @@ function Testimonial() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

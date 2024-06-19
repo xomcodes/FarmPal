@@ -38,7 +38,7 @@ function Header() {
       {/* py-[clamp(0.6rem,1.4vw,1rem)] */}
       <nav className=" justify-between flex  mx-auto   items-center ">
         <div className=" flex items-center justify-center">
-          <figure className=" w-[clamp(3rem,5.8vw,5.2rem)] h-[clamp(2.5rem,5.8vw,5.2rem)]">
+          {/* <figure className=" w-[clamp(3rem,5.8vw,5.2rem)] h-[clamp(2.5rem,5.8vw,5.2rem)]">
             <Image
               className="w-full"
               src={LogoImg}
@@ -46,8 +46,17 @@ function Header() {
               height={20}
               alt="logo-img"
             />
+          </figure> */}
+          <figure className="  w-[clamp(2.3rem,5.2vw,4.6rem)] ">
+            <Image
+              className="w-full"
+              src={LogoImg}
+              // width={20}
+              // height={20}
+              alt="logo-img"
+            />
           </figure>
-          <figure className=" w-[clamp(5rem,12vw,11rem)] h-[clamp(0.8rem,3vw,2.6rem)]">
+          {/* <figure className=" w-[clamp(5rem,12vw,11rem)] h-[clamp(0.8rem,3vw,2.6rem)]">
             <Image
               className="w-full"
               src="/logo-text.svg"
@@ -55,7 +64,7 @@ function Header() {
               height={20}
               alt="logo-text"
             />
-          </figure>
+          </figure> */}
         </div>
 
         <section className=" flex gap-[clamp(0.8rem,3vw,3rem)] items-center">
