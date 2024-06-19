@@ -92,7 +92,7 @@ export default function RootLayout({
                 {children}
                 <Footer />
               </main>
-              {children}
+              {/* {children} */}
             </ModalProvider>
           </MantineProvider>
         </ThemeProvider>
