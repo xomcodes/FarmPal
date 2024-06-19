@@ -27,7 +27,7 @@ const styles = {
 
 function ResetPassword() {
   return (
-    <div className=" flex flex-col flex-1 bg-white dark:bg-black ">
+    <div className=" flex flex-col flex-1 bg-white dark:bg-primary-800 ">
       <div className=" flex items-end justify-end pr-7 pt-[7px] max-[731px]:hidden">
         <ThemeControl />
       </div>

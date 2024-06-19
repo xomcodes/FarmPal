@@ -29,14 +29,14 @@ export default function WaitList() {
   const { resolvedTheme, setTheme } = useTheme();
 
   return (
-    <div className=" bg-white dark:bg-black   items-center flex justify-center flex-1 h-full">
-      <section className=" mx-auto flex items-center justify-center flex-col gap-[clamp(2rem,5.8vw,5.2rem)] h-full ">
-        <div className=" flex flex-col gap-[22px] items-center">
-          <h4 className="text-[clamp(1.8rem,4vw,3.7rem)] max-w-[868px] text-center  font-bold text-[#1F2937] dark:text-white px-2 ">
+    <div className=" bg-white dark:bg-primary-800   items-center flex justify-center flex-1 h-full px-2">
+      <section className=" mx-auto flex items-center justify-center flex-col gap-[clamp(2rem,5.8vw,5.2rem)] h-full px-2 ">
+        <div className=" flex flex-col gap-[22px] items-center justify-center">
+          <p className="text-[clamp(1rem,4vw,3.7rem)] max-w-[868px]   font-bold text-[#1F2937] dark:text-white px-2 text-center  ">
             Don’t miss out, join the queue and get to know first
-          </h4>
+          </p>
           <p
-            className=" text-[#6B7280] font-normal text-[clamp(1rem,1.6vw,1.6rem)] dark:tect-[#D1D5DB]  max-w-[741px] px-2
+            className=" text-[#6B7280] font-normal text-[clamp(0.8rem,1.6vw,1.6rem)] dark:text-[#D1D5DB]  max-w-[741px] px-2
            text-center"
           >
             Welcome to FarmPal, where the future of agriculture meets innovative

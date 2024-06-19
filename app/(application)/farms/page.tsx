@@ -44,7 +44,7 @@ function Farms() {
   const pathname = usePathname();
   return (
     <main
-      className=" px-[60px] pt-[80px] pb-[64px] flex-1 bg-white dark:bg-[#000]
+      className=" px-[60px] pt-[80px] pb-[64px] flex-1 bg-white dark:bg-primary-800
 ]] h-[100dvh] flex flex-col gap-[42px] "
     >
       <section className=" grid grid-cols-[150px,1fr] gap-[clamp(1.8rem,3.4vw,3.1rem)] ">

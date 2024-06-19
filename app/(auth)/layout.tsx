@@ -6,8 +6,8 @@ import LogoImg from "@/src/assets/logo-img.svg";
 
 export default function AuthLayout({ children }: { children: ReactNode }) {
   return (
-    <main className=" flex bg-white dark:bg-black max-[731px]:flex-col h-[100dvh] ">
-      <div className="  bg-primary-400 dark:bg-secondary-100 px-[14px] py-[5px] justify-between items-center hidden max-[731px]:flex ">
+    <main className=" flex bg-white dark:bg-primary-800 max-[731px]:flex-col h-[100dvh] ">
+      <div className="  bg-primary-400 dark:bg-primary-700 px-[14px] py-[5px] justify-between items-center hidden max-[731px]:flex ">
         <figure className=" w-[clamp(3rem,5.8vw,5.2rem)] h-[clamp(2.5rem,5.8vw,5.2rem)] ">
           <Image
             className="w-full"

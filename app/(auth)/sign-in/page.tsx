@@ -5,7 +5,7 @@ import SignInForm from "@/auth/signin-form";
 
 function SignIn() {
   return (
-    <main className=" flex flex-col flex-1 bg-white dark:bg-black h-[100dvh]">
+    <main className=" flex flex-col flex-1 bg-white dark:bg-primary-800 h-[100dvh]">
       <div className=" flex items-end justify-end pr-7 pt-[7px] max-[731px]:hidden">
         <ThemeControl />
       </div>

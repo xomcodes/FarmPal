@@ -128,7 +128,7 @@ function FarmCards() {
   return (
     <section className=" flex flex-col gap-[23px]  w-full">
       <div className=" flex flex-col gap-[clamp(1.5rem,3.4vw,3.1rem)]">
-        <h4 className="font-bold text-[clamp(1.5rem,2.7vw,2.5rem)]  ">
+        <h4 className="font-bold text-[clamp(1.5rem,2.7vw,2.5rem)] dark:text-white  ">
           Best Deals for you
         </h4>
         <section className=" grid grid-cols-4 gap-[clamp(1rem,3vw,2.8rem)]   ">
@@ -139,7 +139,7 @@ function FarmCards() {
             ) => (
               <div
                 key={idx}
-                className=" flex flex-col p-[18px] gap-5 bg-white dark:bg-[#333333] rounded-lg  items-center shadow-sm w-full min-w-[300px] hover:shadow-md"
+                className=" flex flex-col p-[18px] gap-5 bg-white dark:bg-primary-700 rounded-lg  items-center w-full min-w-[300px] hover:shadow-md shadow-sm dark:shadow-none"
               >
                 <figure className="relative flex ">
                   <Image
@@ -215,7 +215,7 @@ function FarmCards() {
         </section>
       </div>
       <section className=" flex flex-col gap-[35px] ">
-        <h4 className="font-semibold text-[clamp(1.5rem,2.7vw,2.5rem)] font-[DM Sans]">
+        <h4 className="font-semibold text-[clamp(1.5rem,2.7vw,2.5rem)] font-[DM Sans] dark:text-white">
           Available farms
         </h4>
 
@@ -224,7 +224,7 @@ function FarmCards() {
             ({ name, cost, begins, location, ros, img, ends, tag }, idx) => (
               <div
                 key={idx}
-                className=" flex flex-col p-[18px] gap-5 bg-white dark:bg-[#333333] rounded-lg w-[clamp(12.8rem,28.4vw,25.6rem))] items-center shadow-sm w-fit min-w-[300px] hover:shadow-md"
+                className=" flex flex-col p-[18px] gap-5 bg-white dark:bg-primary-700 rounded-lg w-[clamp(12.8rem,28.4vw,25.6rem))] items-center  w-fit min-w-[300px] hover:shadow-md shadow-sm dark:shadow-none"
               >
                 <figure className=" flex relative ">
                   <Image

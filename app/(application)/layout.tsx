@@ -11,15 +11,15 @@ function ApplicationLayout({ children }: { children: ReactNode }) {
   return (
     <main className=" flex flex-col">
       <section
-        className="px-[3rem]  flex justify-between bg-primary dark:bg-secondary-500
+        className="px-[3rem]  flex justify-between bg-primary dark:bg-primary-700
  items-center max-[910px]:py-[5px] sticky top-0  z-50 "
       >
-        <figure className=" w-[clamp(3rem,5.8vw,5.2rem)] h-[clamp(2.5rem,5.8vw,5.2rem)]">
+        <figure className="  w-[clamp(2.3rem,5.2vw,4.6rem)] ">
           <Image
             className="w-full"
             src={LogoImg}
-            width={20}
-            height={20}
+            // width={20}
+            // height={20}
             alt="logo-img"
           />
         </figure>
