@@ -15,18 +15,19 @@ import Faq from "@/landing-page/faq";
 
 export default function Home() {
   return (
-    <main className=" flex-col flex">
-      <Hero />
-      <div className="flex flex-col items-center bg-white dark:bg-primary-700">
-        <AboutUs />
-        <CoreValues />
-      </div>
-      <SecurityMovement />
-      <Services />
-      <Team />
-      <Partner />
-      <Faq />
-      {/* <Testimonial /> */}
-    </main>
+    // <main className=" flex-col flex">
+    //   <Hero />
+    //   <div className="flex flex-col items-center bg-white dark:bg-primary-700">
+    //     <AboutUs />
+    //     <CoreValues />
+    //   </div>
+    //   <SecurityMovement />
+    //   <Services />
+    //   <Team />
+    //   <Partner />
+    //   <Faq />
+    //   {/* <Testimonial /> */}
+    // </main>
+    <div></div>
   );
 }
