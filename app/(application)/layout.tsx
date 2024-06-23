@@ -6,12 +6,13 @@ import { Notification } from "iconsax-react";
 import { ThemeControl } from "@/shared/theme-control";
 import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function ApplicationLayout({ children }: { children: ReactNode }) {
   return (
     <main className=" flex flex-col">
       <section
-        className="px-[3rem]  flex justify-between bg-primary dark:bg-primary-700
+        className="px-[clamp(1.5rem,3.3vw,3rem)]  flex justify-between bg-primary dark:bg-primary-700
  items-center max-[910px]:py-[5px] sticky top-0  z-50 "
       >
         <figure className="  w-[clamp(2.3rem,5.2vw,4.6rem)] ">
@@ -36,6 +37,9 @@ function ApplicationLayout({ children }: { children: ReactNode }) {
           </div>
           <Avatar size="md" />
           <ThemeControl />
+          <div className="hidden  max-[549px]:flex cursor-pointer">
+            <GiHamburgerMenu color="#fff" size={20} />
+          </div>
         </section>
       </section>
       {children}

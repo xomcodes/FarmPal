@@ -44,13 +44,13 @@ function Farms() {
   const pathname = usePathname();
   return (
     <main
-      className=" px-[60px] pt-[80px] pb-[64px] flex-1 bg-white dark:bg-primary-800
-]] h-[100dvh] flex flex-col gap-[42px] "
+      className=" px-[clamp(1.2rem,4.2vw,3.7rem)] pt-[clamp(3.7rem,5.6vw,5rem)] pb-[clamp(1.87rem,4.4vw,4.1rem)] flex-1 bg-white dark:bg-primary-800
+]] h-[100dvh] flex flex-col gap-[clamp(1rem,2.9vw,2.6rem)] "
     >
-      <section className=" grid grid-cols-[150px,1fr] gap-[clamp(1.8rem,3.4vw,3.1rem)] ">
+      <section className=" grid grid-cols-[150px,1fr] gap-[clamp(1.8rem,3.4vw,3.1rem)]  max-[549px]:grid max-[549px]:grid-cols-1 ">
         <SideBar />
 
-        <div className=" flex flex-col gap-[54px]">
+        <div className=" flex flex-col gap-[54px] ">
           <section className="  items-center flex justify-between  flex-1 w-full gap-[26px] max-[896px]:flex-col-reverse ">
             <div className=" flex justify-between gap-2 ">
               <Select
@@ -78,8 +78,12 @@ function Farms() {
                 placeholder="search for anything"
                 leftSection={<SearchNormal1 size="14" color="#000" />}
               />
-              <article className=" py-[13px] px-4 bg-[#6B7280] flex items-center rounded-lg cursor-pointer  max-[754px]:w-fit max-[754px]:justify-end   ">
-                <IoFilter color="#fff" size={20} />
+              <article className=" py-[clamp(0.4rem,0.9vw,0.8rem)] px-[clamp(0.5rem,1.1vw,1rem)] bg-[#6B7280] flex items-center rounded-lg cursor-pointer  max-[754px]:w-fit max-[754px]:justify-end">
+                <IoFilter
+                  color="#fff"
+                  size={20}
+                  className="w-[0.65rem,1.3vw,1.25rem]"
+                />
               </article>
             </div>
           </section>

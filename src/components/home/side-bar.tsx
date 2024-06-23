@@ -50,7 +50,7 @@ const sideList = [
 export default function SideBar() {
   const pathname = usePathname();
   return (
-    <div className=" flex flex-col    bg-[#FCFCFD] shadow-sm  rounded-lg  ">
+    <div className=" flex flex-col    bg-[#FCFCFD] shadow-sm  rounded-lg max-[549px]:hidden  ">
       {sideList.map(({ name, icon, link }, idx) => (
         <Link
           href={link}

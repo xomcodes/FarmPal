@@ -131,7 +131,7 @@ function FarmCards() {
         <h4 className="font-bold text-[clamp(1.5rem,2.7vw,2.5rem)] dark:text-white  ">
           Best Deals for you
         </h4>
-        <section className=" grid grid-cols-4 gap-[clamp(1rem,3vw,2.8rem)]   ">
+        <section className=" grid grid-cols-4 gap-[clamp(1rem,3vw,2.8rem)] max-[1284px]:grid-cols-3 max-[965px]:grid-cols-2 max-[642px]:grid-cols-1  ">
           {farmList?.map(
             (
               { name, cost, begins, location, ros, img, ends, tag, id },
@@ -139,7 +139,7 @@ function FarmCards() {
             ) => (
               <div
                 key={idx}
-                className=" flex flex-col p-[18px] gap-5 bg-white dark:bg-primary-700 rounded-lg  items-center w-full min-w-[300px] hover:shadow-md shadow-sm dark:shadow-none"
+                className=" flex flex-col p-[clamp(0.87rem,1.25vw,1.12rem)] gap-5 bg-white dark:bg-primary-700 rounded-lg  items-center w-full min-w-[300px] hover:shadow-md shadow-sm dark:shadow-none"
               >
                 <figure className="relative flex ">
                   <Image
@@ -219,12 +219,12 @@ function FarmCards() {
           Available farms
         </h4>
 
-        <section className=" grid grid-cols-4 gap-[45px]">
+        <section className=" grid grid-cols-4 gap-[clamp(1rem,3vw,2.8rem)] max-[1284px]:grid-cols-3 max-[965px]:grid-cols-2 max-[642px]:grid-cols-1">
           {avaliableList?.map(
             ({ name, cost, begins, location, ros, img, ends, tag }, idx) => (
               <div
                 key={idx}
-                className=" flex flex-col p-[18px] gap-5 bg-white dark:bg-primary-700 rounded-lg w-[clamp(12.8rem,28.4vw,25.6rem))] items-center  w-fit min-w-[300px] hover:shadow-md shadow-sm dark:shadow-none"
+                className=" flex flex-col p-[clamp(0.87rem,1.25vw,1.12rem)] gap-5 bg-white dark:bg-primary-700 rounded-lg w-[clamp(12.8rem,28.4vw,25.6rem))] items-center  w-fit min-w-[300px] hover:shadow-md shadow-sm dark:shadow-none"
               >
                 <figure className=" flex relative ">
                   <Image

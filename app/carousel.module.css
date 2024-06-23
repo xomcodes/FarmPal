@@ -1,0 +1,3 @@
+.root {
+  @apply w-[clamp(32rem,70.8vw,64rem)];
+}
